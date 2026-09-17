@@ -1,4 +1,4 @@
-# MSP2TOOL-Desktop-1.8.42
+# MSP2TOOL-Desktop-1.8.53
 A modern, privacy-focused desktop toolkit for MovieStarPlanet 2, built with C#/.NET 8, WPF and WebView2
 
 ---
@@ -29,7 +29,7 @@ A modern, privacy-focused desktop toolkit for MovieStarPlanet 2, built with C#/.
 
 ### MSP2TOOL Integration
 
-The desktop application loads the privacy-clean MSP2TOOL 1.8.42 extension directly inside Microsoft WebView2.
+The desktop application loads the privacy-clean MSP2TOOL 1.8.53 extension directly inside Microsoft WebView2.
 
 This means the desktop client can provide the existing MSP2TOOL functionality without requiring a separate browser-extension installation.
 
@@ -51,6 +51,20 @@ Included functionality includes:
 - Pet Nickname
 - Account-State-Cleanup
 - MSP2 profile/game tools
+
+
+### 1.8.53 Improvements
+
+- Added Autographer auto-repeat with configurable repeat limits and cooldowns.
+- Added automatic VIP detection through the MSP2 membership API.
+- Added automatic Shop Emote loading and categorization.
+- Added room animation playback and animation previews.
+- Added Radar functionality and improved player interaction tools.
+- Added customizable panel backgrounds with persistent local storage.
+- Added image upload, URL support, and automatic image compression.
+- Added IndexedDB-based persistent panel background storage.
+- Improved UI synchronization for custom backgrounds and animations.
+- Improved animation and emote state preservation when shop data is refreshed.
 
 ### 1.8.42 Improvements
 
