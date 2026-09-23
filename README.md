@@ -1,4 +1,4 @@
-# MSP2TOOL-Desktop-1.8.53
+# MSP2TOOL-Desktop-1.8.73
 A modern, privacy-focused desktop toolkit for MovieStarPlanet 2, built with C#/.NET 8, WPF and WebView2
 
 ---
@@ -29,12 +29,14 @@ A modern, privacy-focused desktop toolkit for MovieStarPlanet 2, built with C#/.
 
 ### MSP2TOOL Integration
 
-The desktop application loads the privacy-clean MSP2TOOL 1.8.53 extension directly inside Microsoft WebView2.
+The desktop application loads the privacy-clean MSP2TOOL 1.8.73 extension directly inside Microsoft WebView2.
 
 This means the desktop client can provide the existing MSP2TOOL functionality without requiring a separate browser-extension installation.
 
 Included functionality includes:
 
+- Auto Dress Up
+- Color Inspector
 - PetClone
 - Pet Capture / Pet-Erkennung
 - Homes Harvest
@@ -52,6 +54,17 @@ Included functionality includes:
 - Account-State-Cleanup
 - MSP2 profile/game tools
 
+
+### 1.8.73.4 Improvements
+Added automatic Dress Up bot functionality with round-state handling.
+Added automatic outfit selection and Dress Up event processing.
+Added automatic ready, rating, replay, and round-end handling.
+Added Outfit Color Codes detection and copying.
+Added dedicated Dress Up and Color Codes sidebar tools.
+Added integrated in-panel views without opening separate windows.
+Improved Dress Up WebSocket event detection and reliability.
+Improved avatar/inventory loading for Color Codes.
+Improved UI integration and navigation for the new tools.
 
 ### 1.8.53 Improvements
 
