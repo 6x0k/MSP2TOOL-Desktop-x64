@@ -1,4 +1,4 @@
-# MSP2TOOL-Desktop-1.8.73
+# MSP2TOOL-Desktop-1.8.86
 A modern, privacy-focused desktop toolkit for MovieStarPlanet 2, built with C#/.NET 8, WPF and WebView2
 
 ---
@@ -27,15 +27,19 @@ A modern, privacy-focused desktop toolkit for MovieStarPlanet 2, built with C#/.
 
 ## Features
 
+> **Current documented version:** `1.8.86` · Windows x64 · .NET 8 / WPF / WebView2
+
+
 ### MSP2TOOL Integration
 
-The desktop application loads the privacy-clean MSP2TOOL 1.8.73 extension directly inside Microsoft WebView2.
+The desktop application loads the privacy-clean MSP2TOOL 1.8.86 extension directly inside Microsoft WebView2.
 
 This means the desktop client can provide the existing MSP2TOOL functionality without requiring a separate browser-extension installation.
 
 Included functionality includes:
 
 - Auto Dress Up
+- Ghost Collection / Ghost Mode
 - Color Inspector
 - PetClone
 - Pet Capture / Pet-Erkennung
@@ -55,7 +59,7 @@ Included functionality includes:
 - MSP2 profile/game tools
 
 
-### 1.8.73.4 Improvements
+### 1.8.86 Improvements
 Added automatic Dress Up bot functionality with round-state handling.
 Added automatic outfit selection and Dress Up event processing.
 Added automatic ready, rating, replay, and round-end handling.
@@ -88,11 +92,24 @@ Improved UI integration and navigation for the new tools.
 - Improved local data prefetching with `xb:prefetch`.
 - Added persistent D3 cache support across service-worker restarts.
 
+### 1.8.86 Ghost Collection and Event Improvements
+
+- Added Ghost Collection handling with daily progress tracking toward the target of **35 ghosts**.
+- Improved reward quantity processing and daily-target calculations.
+- Expanded Halloween quest detection to recognize identifiers containing `coffin`, `spirit`, `skull`, `spook`, and `pumpkin`.
+- Improved collection status and completion feedback.
+- Updated Autograph defaults and handling.
+
+The collection workflow's availability and behavior depend on the current MSP2 client and event APIs. A README entry does not guarantee that the feature is exposed in every UI build or that it works on the live service.
+
 The exact behavior of individual tools can depend on the current MovieStarPlanet 2 website and its APIs.
 
 ---
 
 ## Privacy
+
+> Privacy claims should be verified against the actual source code and network behavior of the release being distributed.
+
 
 The desktop project is based on the privacy-clean MSP2TOOL build.
 
@@ -131,7 +148,7 @@ MSP2TOOL Desktop
 ├── Microsoft WebView2
 │   └── Embedded Chromium browser
 │
-└── MSP2TOOL Extension 1.8.42
+└── MSP2TOOL Extension 1.8.86
     ├── manifest.json
     ├── app.js
     ├── bg.js
@@ -338,18 +355,19 @@ Empty directories are not tracked by Git and therefore do not need to be created
 Current version:
 
 ```text
-MSP2TOOL Desktop 1.8.42
+MSP2TOOL Desktop 1.8.86
 ```
 
-The desktop version corresponds to the integrated MSP2TOOL extension version.
+The desktop release is documented as version 1.8.86 and integrates the corresponding privacy-clean MSP2TOOL extension build.
 
-The integrated 1.8.42 extension also includes the selected safe 1.8.42 local caching and performance improvements:
+The integrated 1.8.86 extension includes the selected Ghost Collection, Halloween quest detection, and local caching/performance improvements:
 
-- Persistent D3 cache
-- Pack-ready notifications
-- Improved D3 warm-up
-- Local-first pack loading
-- `xb:prefetch` improvements
+- Ghost Collection with daily progress tracking (target: 35 ghosts)
+- Improved reward quantity handling and collection progress calculation
+- Expanded Halloween quest matching for `coffin`, `spirit`, `skull`, `spook`, and `pumpkin`
+- Improved Autograph defaults and handling
+- Persistent D3 cache and pack-ready notifications
+- Improved D3 warm-up, local-first pack loading, and `xb:prefetch`
 
 The desktop build does not include the upstream credential interception, telemetry, vendor vault, remote gate, kill-switch, or other removed vendor functionality.
 
@@ -430,6 +448,6 @@ Built with:
 - .NET 8
 - WPF
 - Microsoft Edge WebView2
-- MSP2TOOL 1.8.42 privacy-clean extension
+- MSP2TOOL 1.8.86 privacy-clean extension
 
 An independent desktop client focused on functionality, transparency, and privacy.
