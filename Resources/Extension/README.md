@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>6x0k Space</strong><br>
-  <sub>Cleaned by 6x0k · v.1.8.53</sub>
+  <sub>Cleaned by 6x0k · v.1.8.86</sub>
 </p>
 
 <p align="center">
@@ -15,6 +15,8 @@
 
 - [About](#about)
 - [What's included](#whats-included)
+- [What's New in 1.8.86](#whats-new-in-1875)
+- [What's New in 1.8.73](#whats-new-in-1873)
 - [What's New in 1.8.53](#whats-new-in-1853)
 - [What's New in 1.8.42](#whats-new-in-1842)
 - [Privacy cleanup](#privacy-cleanup)
@@ -67,6 +69,53 @@ The extension provides a large in-game tool panel with functionality around:
 - Changelog / privacy information
 
 The exact availability of individual features can depend on the current MSP2 client and its APIs.
+
+---
+
+## What's New in 1.8.86
+
+
+### Autogramm / Greeting
+- More reliable Autogramm/Greeting retry handling for temporary request failures.
+- Smarter Autogramm cooldown handling instead of relying only on fixed delays.
+- VIP/Membership detection for determining appropriate Autogramm wait times.
+- Improved handling of cooldowns, daily limits, invalid greeting definitions, and temporary request errors.
+- New Autogramm status and progress information, including sent count, target count, current state, and the next action.
+- Background alarms for Autogramm timers, making scheduled actions more reliable when the browser suspends normal JavaScript timers.
+- Improved state recovery and status updates when switching away from and back to the MSP2 tab.
+
+### Performance & Data Loading
+- Improved local caching for the D1, D2, and D3 data packs.
+- Background D3 prefetch/warming so relevant data can be prepared before a feature is opened.
+- A lightweight Home catalog to avoid loading full Home data unnecessarily.
+- Full Home data is loaded on demand when a specific Home is actually needed.
+- Improved Avatar/Face caching for profiles and users that are accessed repeatedly.
+- More compact background data handling to reduce unnecessary processing.
+
+### Account & Profile State
+- Improved local account/profile state handling.
+- Cleaner state management when switching between MSP2 accounts.
+- Better local state handling for profiles and Autogramm targets.
+
+---
+
+# What's New in 1.8.73
+
+Version **1.8.73** is the upstream feature release from which the selected new functionality was taken for the clean 6x0k Space build.
+
+### New functionality from 1.8.73
+
+| Feature | Description | Included in clean build |
+|---|---|---|
+| Auto Dress Up | Automates the Dress Up game workflow and progresses through the relevant round flow. | Yes |
+| Dress Up Event Handling | Handles Dress Up lifecycle events such as challenge/outfit, ready-for-judgment, showoff, rating, round-end and game-end states. | Yes |
+| Outfit / Avatar Color Codes | Retrieves avatar/outfit inventory information and exposes associated color values for inspection and copying. | Yes |
+| Integrated Feature UI | Provides dedicated UI access for the new functions. | Yes |
+| Updated Tool Integration | Connects the new functionality with the existing MSP2 session and tool panel. | Yes |
+
+### Excluded upstream infrastructure
+
+The clean build deliberately excludes unrelated privacy-sensitive infrastructure from the upstream version, including credential collection, vendor vault communication, telemetry, device/hardware fingerprinting, heartbeat/presence reporting, remote configuration, remote control/kill-switch mechanisms and third-party synchronization.
 
 ---
 
@@ -396,7 +445,7 @@ The previous third-party telemetry/vendor domains are no longer present in the m
 
 # Changelog
 
-## v.1.8.53 — Cleaned by 6x0k
+## v.1.8.86 — Cleaned by 6x0k
 
 ### Added
 
@@ -551,5 +600,10 @@ Use browser automation and game-related functionality responsibly and at your ow
 ---
 
 <p align="center">
-  <sub>6x0k Space · Cleaned by 6x0k · v.1.8.53</sub>
+  <sub>6x0k Space · Cleaned by 6x0k · v.1.8.86</sub>
 </p>
+
+
+## Ghost Collection
+
+The panel includes a **Start Ghost Collection** button and progress indicator for the daily target of 35 ghosts.
